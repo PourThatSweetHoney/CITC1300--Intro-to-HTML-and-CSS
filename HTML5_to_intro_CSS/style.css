@@ -1,0 +1,248 @@
+﻿body {
+    background-color: dimgrey;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(Images/Europe_1812_map_en.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: 30%;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+
+/*Styles related to the container*/
+#container {
+    margin-top: -40px;
+    display: block;
+    background-color: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+/*Styles for the title*/
+h3 {
+    font-weight: bold;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 70px;
+    text-align: center;
+    background-image: url(Images/old_paper.jpg);
+    background-size: cover;
+    background-position: 0 50%;
+    overflow: hidden;
+    border: 6px solid black;
+}
+    h3 img {
+        margin-top: 15px;
+        width: 70px;
+        height: 70px;
+    }
+
+/*Title Image with Text*/
+#title_img {
+    margin-top: -60px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    #title_img img {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: antiquewhite;
+        position: relative;
+        width: 80%;
+        height: 300px;
+        
+        object-fit: cover;
+        object-position: 0 35%;
+        border: 3px solid black;
+    }
+
+    #title_img p {
+        position: absolute;
+        top: -20px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Lucida Calligraphy';
+        width: 600px;
+        height: 100px;
+        color: transparent;
+        text-shadow: 0 0 5px rgba(1,1,1,1);
+        font-size: 30px;
+        transition: ease-in-out;
+        transition-duration: 600ms;
+        z-index: 100;
+    }
+
+    #title_img p:hover {
+        color: red;
+    }
+
+    /*Styles for the h2 tag*/
+h2 {
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+    background-color: lightgray;
+    border: 3px solid black;
+}
+
+
+    
+/*Navigation Area*/
+
+#boxNav {
+    
+    position:relative;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content:normal;
+    gap: 50px;
+}
+#box1, #box2, #box3 {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    text-align: center;
+    border: 3px solid black;
+    font-size: 20px;
+    opacity: 50%;
+    transition: ease-in-out;
+    transition-duration: 600ms;
+    background-size: contain;
+    text-decoration: none;
+    color: black;
+    align-content: center;
+    text-shadow: 0 0 5px rgba(1,1,1,1);
+}
+
+#box1:hover, #box2:hover, #box3:hover{
+    opacity:100%;
+    height:210px;
+    width:210px;
+}
+
+#box1 {
+    background-image: url(Images/napoleonic_tactics.jpg);
+}
+#box2 {
+    background-image: url(Images/Europe_1812_map_en.png);
+}
+#box3 {
+    background-image: url(Images/napoleon.PNG);
+    background-size: cover;
+}
+
+
+/*The CSS used to make the content on the index.html file:*/
+#Text_Images {
+    background-color:bisque;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    gap: 2px;
+}
+
+#txt_caption, #paragraphs_and_title {
+    position:relative;
+    width: 650px;
+    height: 380px;
+}
+
+#txt_caption img {
+margin-top:30px;
+position: relative;
+object-fit: contain;
+width: 580px;
+height: 320px;
+}
+#txt_caption p {
+    
+    font-size: 12px;
+    font-family: 'Lucida Calligraphy';
+    text-align: center;
+}
+
+#paragraphs_and_title {
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#paragraphs_and_title h1{
+    text-align:center;
+}
+
+#paragraphs_and_title p{
+    text-align:left;
+    font-size:20px;
+}
+
+/*The title listing his campaigns:*/
+
+#campaign_list_title{
+    font-size: 16px;
+}
+
+#campaign_list {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: normal;
+}
+
+    #campaign_list li:nth-child(1), #campaign_list li:nth-child(2), #campaign_list li:nth-child(3), #campaign_list li:nth-child(4) {
+        margin:0px;
+        padding:0px;
+        list-style: none;
+        width: 130px;
+        height: 130px;
+        background-color: black;
+        text-align: center;
+        border: 2px solid black;
+        font-size: 20px;
+        transition: ease-in-out;
+        transition-duration: 600ms;
+        background-size: cover;
+        text-decoration: none;
+        align-content: center;
+        text-shadow: 0 0 5px rgba(1,1,1,1);
+    }
+
+    #campaign_list li:nth-child(1) {
+        background-image: url(Images/toulons.jpg);
+    }
+    #campaign_list li:nth-child(2) {
+        background-image: url(Images/austerlitz.png);
+    }
+    #campaign_list li:nth-child(3) {
+        background-image: url(Images/borodino.jpg);
+    }
+    #campaign_list li:nth-child(4) {
+        background-image: url(Images/waterloo.PNG);
+    }

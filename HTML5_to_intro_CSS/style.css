@@ -154,7 +154,7 @@ h2 {
 
 
 /*The CSS used to make the content on the index.html file:*/
-#Text_Images {
+.Text_Images {
     background-color:bisque;
     position: relative;
     width: 100%;
@@ -166,44 +166,44 @@ h2 {
     gap: 2px;
 }
 
-#paragraphs_and_title {
+.paragraphs_and_title {
     
     position: relative;
-    width: 650px;
-    height: 350px;
+    width: 100%;
+    height: 40%;
 }
-#txt_caption{
+.txt_caption{
     width: 300px;
     height: 380px;
     position: relative;
 }
 
-    #txt_caption img {
-        margin-top: 30px;
-        position: relative;
-        object-fit: contain;
-        width: 280px;
-        height: 320px;
-        border: double 2px black;
+.txt_caption img {
+    margin-top: 30px;
+    position: relative;
+    object-fit: contain;
+    width: 280px;
+    height: 320px;
+    border: double 2px black;
         
-    }
-    #txt_caption p {
-        font-size: 12px;
-        font-family: 'Lucida Calligraphy';
-        text-align: center;
-    }
+}
+.txt_caption p {
+    font-size: 12px;
+    font-family: 'Lucida Calligraphy';
+    text-align: center;
+}
 
-#paragraphs_and_title {
+.paragraphs_and_title {
     margin-top: 30px;
     margin-right: 20px;
     margin-left: 20px;
 }
 
-#paragraphs_and_title h1{
+.paragraphs_and_title h1{
     text-align:center;
 }
 
-#paragraphs_and_title p{
+.paragraphs_and_title p{
     text-align:left;
     font-size:16px;
 }
@@ -329,111 +329,3 @@ footer {
 
 /*Preventing errors:*/
 
-#Text_Images2 {
-    background-color: bisque;
-    position: relative;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-    gap: 2px;
-}
-
-#paragraphs_and_title2 {
-    position: relative;
-    width: 650px;
-    height: 350px;
-}
-
-#txt_caption2 {
-    width: 300px;
-    height: 380px;
-    position: relative;
-}
-
-    #txt_caption2 img {
-        margin-top: 30px;
-        position: relative;
-        object-fit: contain;
-        width: 280px;
-        height: 320px;
-        border: double 2px black;
-    }
-
-    #txt_caption2 p {
-        font-size: 12px;
-        font-family: 'Lucida Calligraphy';
-        text-align: center;
-    }
-
-#paragraphs_and_title2 {
-    margin-top: 30px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-    #paragraphs_and_title2 h1 {
-        text-align: center;
-    }
-
-    #paragraphs_and_title2 p {
-        text-align: left;
-        font-size: 16px;
-    }
-    /*paragraphs and title3*/
-
-#Text_Images3 {
-    background-color: bisque;
-    position: relative;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-    gap: 2px;
-}
-
-#paragraphs_and_title3 {
-    position: relative;
-    width: 650px;
-    height: 350px;
-}
-
-#txt_caption3 {
-    width: 300px;
-    height: 380px;
-    position: relative;
-}
-
-    #txt_caption3 img {
-        margin-top: 30px;
-        position: relative;
-        object-fit: contain;
-        width: 280px;
-        height: 320px;
-        border: double 2px black;
-    }
-
-    #txt_caption3 p {
-        font-size: 12px;
-        font-family: 'Lucida Calligraphy';
-        text-align: center;
-    }
-
-#paragraphs_and_title3 {
-    margin-top: 30px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-    #paragraphs_and_title3 h1 {
-        text-align: center;
-    }
-
-    #paragraphs_and_title3 p {
-        text-align: left;
-        font-size: 16px;
-    }

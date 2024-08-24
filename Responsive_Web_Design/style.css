@@ -1,0 +1,540 @@
+﻿/*This is the styling used to add the blurry picture of the map in the background*/
+body {
+    background-color: dimgrey;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(Images/Europe_1812_map_en.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: 30%;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+
+/*Styles related to the container*/
+#container {
+    margin-top: -40px;
+    display: block;
+    background-color: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+/*Styles for the title*/
+h3 {
+    font-weight: bold;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 70px;
+    text-align: center;
+    background-image: url(Images/old_paper.jpg);
+    background-size: cover;
+    background-position: 0 50%;
+    overflow: hidden;
+    border: 6px solid black;
+}
+    h3 img {
+        margin-top: 15px;
+        width: 70px;
+        height: 70px;
+    }
+
+/*Title Image with Text*/
+#title_img {
+    margin-top: -60px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    #title_img img {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: antiquewhite;
+        position: relative;
+        width: 80%;
+        height: 350px;
+        
+        object-fit: cover;
+        object-position: 0 35%;
+        border: 3px solid black;
+    }
+
+    #title_img p {
+        position: absolute;
+        top: -20px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Lucida Calligraphy';
+        width: 80%;
+        height: 25%;
+        color: transparent;
+        text-shadow: 0 0 5px rgba(1,1,1,1);
+        font-size: 30px;
+        transition: ease-in-out;
+        transition-duration: 600ms;
+        z-index: 100;
+    }
+
+        #title_img p:hover {
+            color: red;
+            text-shadow: 0 0 0px rgba(0,0,0,0);
+        }
+
+    /*Styles for the h2 tag*/
+h2 {
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+    background-color: lightgray;
+    border: 3px solid black;
+}
+
+
+    
+/*Navigation Area*/
+
+#boxNav {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content:normal;
+    gap: 3%;
+}
+#box1, #box2, #box3 {
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    text-align: center;
+    border: 3px solid black;
+    font-size: 20px;
+    opacity: 50%;
+    transition: ease-in-out;
+    transition-duration: 600ms;
+    background-size: contain;
+    text-decoration: none;
+    color: black;
+    align-content: center;
+    text-shadow: 0 0 5px rgba(1,1,1,1);
+}
+
+#box1:hover, #box3:hover{
+    opacity:100%;
+    height:90%;
+    width:90%;
+}
+
+#box2:hover {
+    opacity: 100%;
+    height: 90%;
+    width: 90%;
+    color:white;
+}
+
+#box1 {
+    background-image: url(Images/napoleonic_tactics.jpg);
+}
+#box2 {
+    background-image: url(Images/napoleons-marshals.jpg);
+    background-size: cover;
+}
+#box3 {
+    background-image: url(Images/napoleon.PNG);
+    background-size: cover;
+}
+
+
+/*The CSS used to make the content on the index.html file:*/
+/*This is me later, I realized I should have used classes instead of id's, so I went ahead and changed that:*/
+.Text_Images {
+    background-color:bisque;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+
+.txt_caption { 
+    width: 100%;
+    height: 100%;
+    position: relative; 
+}
+
+    .txt_caption img {
+        margin-top: 30px;
+        position: relative;
+        object-fit: contain;
+        width: 100%;
+        height: 70%;
+        border: double 2px black;
+        
+    }
+    .txt_caption p {
+        font-size: 12px;
+        font-family: 'Lucida Calligraphy';
+        text-align: center;
+    }
+
+.paragraphs_and_title {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.paragraphs_and_title {
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.paragraphs_and_title h1{
+    text-align:center;
+}
+
+.paragraphs_and_title p{
+    text-align:left;
+    font-size:16px;
+}
+
+/*The title listing his campaigns:*/
+
+#campaign_list_title{
+    font-size: 16px;
+    text-align: center;
+}
+
+#campaign_list {
+    
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: normal;
+    list-style-type: none;
+    gap: 2%;
+}
+
+
+    #campaign_list li {
+        margin: 0px;
+        padding: 0px;
+        
+        list-style: none;
+        width: 80%;
+        height: 80%;
+        background-color: white;
+        text-align: center;
+        border: 2px solid black;
+        font-size: 20px;
+        transition: ease-in-out;
+        transition-duration: 600ms;
+        background-size: cover;
+        text-decoration-color: white;
+        align-content: center;
+        text-shadow: 0 0 5px rgba(1,1,1,1);
+
+    }
+
+    #campaign_list li a {
+        color: lightgray;
+    }
+    #campaign_list li:nth-child(1):hover, #campaign_list li:nth-child(2):hover, #campaign_list li:nth-child(3):hover, #campaign_list li:nth-child(4):hover {
+    width: 90%;
+    height: 90%;
+    }
+#campaign_list li:nth-child(1) {
+    background-image: url(Images/toulons.jpg);
+}
+#campaign_list li:nth-child(2) {
+    background-image: url(Images/austerlitz.png);
+}
+#campaign_list li:nth-child(3) {
+    background-image: url(Images/borodino.jpg);
+}
+#campaign_list li:nth-child(4) {
+    background-image: url(Images/waterloo.PNG);
+}
+
+/*I need to style EVERY element, so here is my styling for the footer:*/
+
+footer {
+    color:darkred;
+}
+
+/*This is the CSS related to the tactics.html page
+                        |
+                        |
+                        |
+                        V
+*/
+
+#tactics_video {
+    top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: antiquewhite;
+    position: relative;
+    width: 80%;
+    height: 60%;
+    border: 3px solid black;
+}
+
+#tactics_quote {
+    top: auto;
+    left: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 2%;
+    font-family: 'Lucida Calligraphy';
+    width: 80%;
+    height: 20%;
+    color: transparent;
+    align-content: center;
+    text-shadow: 0 0 5px rgba(1,1,1,1);
+    font-size: 20px;
+    transition: ease-in-out;
+    transition-duration: 600ms;
+}
+
+    #tactics_quote:hover {
+        color: darkred;
+        opacity: 1;
+        text-shadow: 0px 0px 4px white;
+    }
+
+#waterloo_title {
+    text-align:center;
+    align-content: center;
+    top: auto;
+    left: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lucida Calligraphy';
+}
+
+/*Styles for Napoleon's marshals page:*/
+
+
+/*Marshal pic:*/
+#marshals {
+    
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    height: 20%;
+}
+    #marshals img {
+        top: -20px;
+        background-color: black;
+        opacity: 1;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: ease-in-out;
+        transition-duration: 600ms;
+    }
+    #marshals p {
+        font-size: 40px;
+        position: absolute;
+        width: 80%;
+        height: 60% ;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: transparent;
+        font-family: 'Lucida Calligraphy';
+        transition: ease-in-out;
+        transition-duration: 600ms;
+        z-index: 1;
+    }
+
+    #marshals p:hover {
+        color: darkred;
+        text-shadow: 0px 0px 2px black;
+    }
+
+    #marshals p:hover ~ img {
+        opacity: 0.2;
+    }
+
+    /*Making the 2 columns:*/
+
+.two_column {
+    background-color: bisque;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.paragraphs_and_title img {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+    width: 40%;
+    height: 60%;
+    border: double 2px black;
+    transition: ease-in-out;
+    transition-duration: 600ms;
+}
+.paragraphs_and_title img:hover {
+    width: 45%;
+    height: 65%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#farewell_to_his_marshals_img{
+width: 70%;
+}
+
+#farewell_to_his_marshals_img:hover {
+    width: 75%;
+    height: 65%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*This is the styles for the Napoleon's marshals unordered list:*/
+
+
+
+
+.Napoleons_marshals_ul {
+    
+    background-color: rgb(41 42 43);
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 670px;
+    list-style-type: none;
+    gap: 2%;
+}
+
+.Napoleons_marshals_ul li {
+    background-color: green;
+    width: 20%;
+    height: 150px;
+    text-align: center;
+    border: 3px solid black;
+    font-size: 20px;
+    transition: ease-in-out;
+    transition-duration: 600ms;
+    background-size: contain;
+    text-decoration: none;
+    color: black;
+    align-content: center;
+    text-shadow: 0 0 5px rgba(1,1,1,1);
+}
+.Napoleons_marshals_ul li:hover {
+    width: 25%;
+    height: 170px;
+}
+
+#Napoleons_marshals_all_parts {
+    background-color: darkgrey;
+    width: 80%;
+    height: 30%;
+    font-size: 46px;
+}
+
+#Napoleons_marshals_all_parts:hover {
+    width: 85%;
+    height: 35%;
+    color:white;
+}
+
+.Napoleons_marshals_ul li a:hover {
+    color: red;
+}
+
+#Napoleons_marshals_all_parts a:hover {
+    color: red;
+}
+
+.Napoleons_marshals_ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/*background pictures for each element in the unordered list:*/
+
+.Napoleons_marshals_ul li:nth-child(1) {
+    background-image: url(Images/coat_of_arms.png);
+    background-size: cover;
+    background-position: 0 50%;
+}
+
+.Napoleons_marshals_ul li:nth-child(2) {
+    background-image: url(Images/grouchy.jpg);
+    background-size: cover;
+    background-position: 0 25%;
+}
+
+.Napoleons_marshals_ul li:nth-child(3) {
+    background-image: url(Images/bernadotte.jpg);
+    background-size: cover;
+    background-position: 0 25%;
+}
+
+.Napoleons_marshals_ul li:nth-child(4) {
+    background-image: url(Images/murat.jpg);
+    background-size: cover;
+    background-position: 0 25%;
+}
+
+.Napoleons_marshals_ul li:nth-child(5) {
+    background-image: url(Images/massena.jpg);
+    background-size: cover;
+    background-position: 0 25%;
+}
+
+.Napoleons_marshals_ul li:nth-child(6) {
+    background-image: url(Images/soult.jpg);
+    background-size: cover;
+    background-position: 0 25%;
+}
+
+.Napoleons_marshals_ul li:nth-child(7) {
+    background-image: url(Images/davout.jpg);
+    background-size: cover;
+    background-position: 0 25%;
+}

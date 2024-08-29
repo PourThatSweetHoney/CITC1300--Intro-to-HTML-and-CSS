@@ -24,8 +24,7 @@ body {
     margin-top: -40px;
     display: block;
     background-color: antiquewhite;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     width: 80%;
 }
 /*Styles for the title*/

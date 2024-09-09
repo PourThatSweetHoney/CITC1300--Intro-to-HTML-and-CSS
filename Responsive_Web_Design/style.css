@@ -1,4 +1,26 @@
 ﻿/*Generic styles for all versions of the website:*/
+
+/*This is the styling used to add the blurry picture of the map in the background*/
+body {
+    background-color: dimgray;
+}
+
+#background {
+    background-color: dimgray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(Images/Europe_1812_map_en.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: 30%;
+    filter: blur(3px);
+    z-index: -1;
+}
+
 #container {
     background-color: antiquewhite;
     display: block;
@@ -86,6 +108,7 @@ h2 {
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .txt_caption {
@@ -240,7 +263,20 @@ h2 {
             }
 
     /*styles for marshals.html:*/
-    #marshals img {
+
+    .two_column section img {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .two_column aside img {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        #marshals img {
         width: 100%;
     }
 
@@ -320,20 +356,27 @@ h2 {
 
     /*Styles for index.html:*/
 
+    #title_img img{
+        width: 100%;
+    }
+
     #campaign_list {
         display: flex;
+        margin-left: auto;
+        margin-right: auto;
         flex-wrap: wrap;
-        height: 900px;
+        height: 400px;
         width: 90%;
-        gap: 2%;
+        gap: 2px;
         list-style-type: none;
         justify-content: center;
     }
 
         #campaign_list li {
-            width: 45%;
-            height: 60%;
+            width: 40%;
+            height: 45%;
             background-size: cover;
+            border: 4px solid black;
         }
 
             #campaign_list li a {
@@ -341,7 +384,7 @@ h2 {
                 margin: 0;
                 text-decoration: 0;
                 color: lightgray;
-                font-size: 45px;
+                font-size: 35px;
                 text-align: center;
             }
 
@@ -375,6 +418,235 @@ h2 {
     #container {
         width: 90%;
     }
+    h3 {
+        font-size: 80px;
+    }
+
+        h3 img {
+            margin-top: 20px;
+            width: 65px;
+            height: 65px;
+        }
+
+    h2 {
+        font-size: 60px;
+    }
+    /*styles for the navigation box:*/
+
+    .navContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3px;
+    }
+
+    .navBox {
+        height: 200px;
+        width: 240px;
+        font-size: 50px;
+        color: white;
+    }
+
+    /*Styles for page content:*/
+    .Text_Images {
+        top: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .txt_caption {
+        top: 10px;
+        display: block;
+        width: 100%;
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+        .txt_caption img {
+            margin: auto;
+            position: center;
+            width: 50%;
+        }
+
+        .txt_caption p {
+            font-size: 25px;
+            width: 100%;
+        }
+
+    .paragraphs_and_title h1 {
+        font-size: 35px;
+    }
+
+    .paragraphs_and_title p {
+        font-size: 20px;
+    }
+
+    /*Styles for the equipment.html:*/
+
+    .cannon_list {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+        .cannon_list li {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            border: double;
+            background-color: blanchedalmond;
+            justify-content: center;
+            align-content: center;
+        }
+
+            .cannon_list li h1 {
+                width: 100%;
+                margin: auto;
+                text-align: center;
+            }
+
+            .cannon_list li img {
+                width: 55%;
+                height: 65%;
+                margin: auto;
+            }
+
+    .two_column section img {
+        width: 50%;    
+    }
+    .two_column aside img {
+        width: 50%;
+    }
+
+    /*styles for marshals.html:*/
+    #marshals img {
+        width: 100%;
+    }
+
+    .Napoleons_marshals_ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: rgb(41 42 43);
+        margin: 0;
+        padding: 0;
+        justify-content: space-around;
+        list-style-type: none;
+        gap: 5px;
+    }
+
+        .Napoleons_marshals_ul li {
+            width: 300px;
+            height: 300px;
+            align-content: center;
+            justify-content: center;
+        }
+
+            .Napoleons_marshals_ul li a {
+                color: white;
+                text-decoration: none;
+                text-align: center;
+            }
+
+            .Napoleons_marshals_ul li:nth-child(1) {
+                background-image: url(Images/coat_of_arms.png);
+                background-size: cover;
+                background-position: 0 50%;
+                width: 800px;
+                color: darkgray;
+                font-size: 60px;
+            }
+
+            .Napoleons_marshals_ul li:nth-child(2) {
+                background-image: url(Images/grouchy.jpg);
+                background-size: cover;
+                background-position: 0 25%;
+            }
+
+            .Napoleons_marshals_ul li:nth-child(3) {
+                background-image: url(Images/bernadotte.jpg);
+                background-size: cover;
+                background-position: 0 25%;
+            }
+
+            .Napoleons_marshals_ul li:nth-child(4) {
+                background-image: url(Images/murat.jpg);
+                background-size: cover;
+                background-position: 0 25%;
+            }
+
+            .Napoleons_marshals_ul li:nth-child(5) {
+                background-image: url(Images/massena.jpg);
+                background-size: cover;
+                background-position: 0 25%;
+            }
+
+            .Napoleons_marshals_ul li:nth-child(6) {
+                background-image: url(Images/soult.jpg);
+                background-size: cover;
+                background-position: 0 25%;
+            }
+
+            .Napoleons_marshals_ul li:nth-child(7) {
+                background-image: url(Images/davout.jpg);
+                background-size: cover;
+                background-position: 0 25%;
+            }
+    /*Styles for tactics.html:*/
+    #title_img video {
+        width: 100%;
+    }
+
+    /*Styles for index.html:*/
+
+    #campaign_list {
+        display: flex;
+        flex-wrap: wrap;
+        height: 700px;
+        width: 90%;
+        gap: 2%;
+        list-style-type: none;
+        justify-content: center;
+    }
+
+        #campaign_list li {
+            width: 45%;
+            height: 45%;
+            background-size: cover;
+            border: 4px solid black;
+        }
+
+            #campaign_list li a {
+                padding: 0;
+                margin: 0;
+                text-decoration: 0;
+                color: lightgray;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            #campaign_list li:nth-child(1) {
+                background-image: url(Images/toulons.jpg);
+            }
+
+            #campaign_list li:nth-child(2) {
+                background-image: url(Images/austerlitz.png);
+            }
+
+            #campaign_list li:nth-child(3) {
+                background-image: url(Images/borodino.jpg);
+            }
+
+            #campaign_list li:nth-child(4) {
+                background-image: url(Images/waterloo.PNG);
+            }
 
 
 
@@ -383,21 +655,7 @@ h2 {
     /*<--------------------------------->*/
     /*Styles for desktop:*/
     @media (min-width: 1080px) {
-        /*This is the styling used to add the blurry picture of the map in the background*/
-        #background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url(Images/Europe_1812_map_en.png);
-            background-position: center;
-            background-repeat: repeat;
-            background-size: cover;
-            opacity: 30%;
-            filter: blur(3px);
-            z-index: -1;
-        }
+        
 
         /*Styles related to the container*/
         #container {

@@ -262,6 +262,11 @@ h2 {
             }
 
     /*styles for marshals.html:*/
+    #marshals p {
+        font-size: 30px;
+        color: darkred;
+        font-family: 'Lucida Calligraphy';
+    }
 
     .two_column section img {
         width: 80%;
@@ -302,6 +307,7 @@ h2 {
                 color: white;
                 text-decoration: none;
                 text-align: center;
+               
             }
 
             .Napoleons_marshals_ul li:nth-child(1) {
@@ -352,10 +358,22 @@ h2 {
     #title_img video {
         width: 100%;
     }
+    #waterloo_title{
+        font-size:20px;
+        text-align: center;
+    }
 
+    #tactics_quote {
+        font-size:15px;
+        color: darkred;
+        font-family: 'Lucida Calligraphy';
+    }
+
+    #campaign_list_title{
+        text-align:center;
+    }
     /*Styles for index.html:*/
-
-    #title_img img{
+    #title_img img {
         width: 100%;
     }
 
@@ -526,6 +544,10 @@ h2 {
     /*styles for marshals.html:*/
     #marshals img {
         width: 100%;
+    }
+
+    #marshals p {
+        font-size: 40px;
     }
 
     .Napoleons_marshals_ul {
@@ -1031,6 +1053,10 @@ h2 {
             align-content: center;
         }
 
+        .two_column section p, .two_column aside p{
+            font-size:30px;
+        }
+
         .paragraphs_and_title img {
             display: block;
             position: relative;
@@ -1045,8 +1071,8 @@ h2 {
         }
 
             .paragraphs_and_title img:hover {
-                width: 45%;
-                height: 65%;
+                width: 55%;
+                height: 75%;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             }
 

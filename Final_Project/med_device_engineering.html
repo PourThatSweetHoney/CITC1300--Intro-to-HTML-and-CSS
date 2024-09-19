@@ -5,11 +5,12 @@
     <meta charset="utf-8" />
     <title>Meical Device Engineering</title>
     <!--Fill in with actual stylesheet here:-->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bme_website_styles.css" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
 <body>
-    <h1>MEDICAL DEVICE ENGINEERING</h1>
+    <div class="background">
+    </div>
 
     <nav class="navigation_bar">
         <ul>
@@ -21,15 +22,25 @@
         </ul>
     </nav>
 
-    <div class="img_caption">
-        <img src="images/medical_devices.jpg" />
-        <h6>Medical Devices</h6>
+    <div class="hero">
+        <h1>MEDICAL DEVICE ENGINEERING</h1>
+        <video autoplay muted loop>
+            <source src="videos/DNA_animation.mp4" type="video/mp4" />
+        </video>
     </div>
 
+
+
     <div class="content">
+
+        <div id="img_caption_meddevices">
+            <img src="images/medical_devices.jpg" />
+            <h6>Medical Devices</h6>
+        </div>
+
         <h3>Replacing Human Organs</h3>
 
-        <div class="2_col_img_img">
+        <div class="two_col_img_img">
             <div class="img_caption">
                 <img src="images/artificial_heart.jpg" />
                 <h6>This artifcial heart was design to replace a defective heart</h6>
@@ -40,7 +51,11 @@
             </div>
         </div>
 
-        <div class="1_col_txt">
+        <div class="breakpoint">
+            <img src="images/gene_emblem.png" /><hr /><img src="images/gene_emblem.png" />
+        </div>
+
+        <div class="one_col_txt">
             <h3>When Organs Malfunction: How to Replace Them</h3>
             <p>
                 &emsp;Medical device engineering plays a critical role in addressing the challenges posed by organ failure. By developing innovative technologies, engineers are providing life-saving solutions for patients who require organ replacement or support.
@@ -53,7 +68,7 @@
             </p>
         </div>
 
-        <div class="2_col_img_img">
+        <div class="two_col_img_img">
             <div class="img_caption">
                 <img src="images/diabetes_monitor.jpg" />
                 <h6>New Diabetes Monitor</h6>
@@ -64,7 +79,7 @@
             </div>
         </div>
 
-        <div class="2_col_txt_img">
+        <div class="two_col_txt_img">
             <div class="title_txt">
                 <h3>The Difficulty in Mimicing a Human Organ</h3>
                 <p>
@@ -79,10 +94,14 @@
             </div>
         </div>
 
+        <div class="breakpoint">
+            <img src="images/gene_emblem.png" /><hr /><img src="images/gene_emblem.png" />
+        </div>
+
         <div class="links">
             <h5>More about Medical Device Engineering</h5>
             <a href="https://medicine.yale.edu/news/yale-medicine-magazine/article/medical-devices-and-technology-across-the-years/">Yale: Medical devices and technology across the years</a>
-            <a href="https://www.ncbi.nlm.nih.gov/books/NBK218281/">National Institute of Health: Inventing Medical Devices: Five Inventors' Stories</a>
+            <a href="https://www.ncbi.nlm.nih.gov/books/NBK218281/">Inventing Medical Devices: Five Inventors' Stories</a>
         </div>
     </div>
 

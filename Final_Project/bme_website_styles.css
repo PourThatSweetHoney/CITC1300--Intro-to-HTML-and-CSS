@@ -1,0 +1,373 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+
+body
+{
+    background-color: rgb(23 21 45);
+}
+
+/*background image styles:*/
+.background {
+    background-image: url(images/med_background_2.png);
+    position: fixed;
+    z-index: -1;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+
+/*Navigation Bar Styles:*/
+.navigation_bar{
+    width:100%;
+}
+
+    .navigation_bar ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        list-style-type: none;
+        margin: 1%;
+        padding: 0;
+    }
+
+.navigation_bar ul li {
+    
+    background-color: rgb(64 171 202);
+    height: 40px;
+    width: 20%;
+    border: solid black 1px;
+    align-content: center;
+    text-align:center;
+}
+
+.navigation_bar ul li a {
+    align-content:center;
+    margin: auto;
+    color: navy;
+    text-decoration: none;
+    text-align: center;
+    margin-top: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+.navigation_bar ul li a:hover{
+    color:white;
+}
+    /*Content for the website:*/
+    .content {
+        width: 80%;
+        background-color: aliceblue;
+        margin: auto;
+        border: solid 2px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+/*Title*/
+.hero {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    width: 80%;
+    margin:auto;
+    border: solid 2px;
+    margin-bottom:-2px;
+}
+
+.hero h1 {
+    text-align: center;
+    font-family: "Moderustic", sans-serif;
+    font-size: 50px;
+    background-color: transparent;
+    color: skyblue;
+}
+
+.hero video{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    min-width:100%;
+    min-height:100%;
+    z-index: -1;
+}
+
+
+
+/*H3 Tags:*/
+h3 {
+    text-align: center;
+    font-family: "Moderustic", sans-serif;
+}
+
+
+/*One column:*/
+.one_col_txt {
+    display: block;
+}
+
+.one_col_txt h3 {
+    text-align: center;
+    width: 100%;
+    font-family: "Moderustic", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.one_col_txt p{
+    font-family: 'Roboto';
+    margin-left: 5%;
+    margin-right:5%;
+}
+
+/*Two columns, text and image:*/
+
+.two_col_txt_img {
+    display: flex;
+    flex-direction: row;
+    background-color: gainsboro;
+    justify-content: space-around;
+    border: solid 3px;
+    border-color:darkcyan;
+}
+
+.two_col_txt_img .img_caption {
+    width: 48%;
+    transition: ease-in-out;
+    transition-duration: 600ms;
+}
+
+.two_col_txt_img .img_caption:hover {
+    width: 50%;
+}
+
+.two_col_txt_img .img_caption img {
+    margin-top: 3%;
+    width: 90%;
+    height: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.two_col_txt_img .img_caption h6 {
+    width: 100%;
+    margin-top: 0px;
+    font-family: 'Roboto';
+}
+
+.two_col_txt_img .title_txt {
+width: 45%;
+transition: ease-in-out;
+transition-duration: 600ms;
+}
+.two_col_txt_img .title_txt p {
+    font-family: 'Roboto';
+}
+
+.two_col_txt_img .title_txt h3 {
+    font-family: "Moderustic", sans-serif;
+}
+
+    .two_col_txt_img .title_txt:hover {
+    width: 50%;
+}
+
+
+/*two columns img, img:*/
+
+.two_col_img_img {
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-around;
+margin: 2%;
+gap: 3%;
+}
+
+.two_col_img_img img {
+    height: 400px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: ease-in-out;
+    transition-duration: 600ms;
+    object-fit:fill;
+}
+
+.two_col_img_img h6 {
+    width: 100%;
+    margin-top: 0px;
+    font-family: 'Roboto';
+}
+
+.two_col_img_img img:hover {
+    width: 90%;
+    height: 410px;
+}
+
+/*breakpoint styles*/
+.breakpoint{
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction:row;
+    justify-content: space-between;
+    margin:2%;
+}
+
+.breakpoint img{
+    background-color:lightcyan;
+    width:3%;
+    height:3%;
+    border:solid 1px;
+    border-radius: 100%;
+}
+.breakpoint img:hover{
+    background-color:white;
+}
+
+.breakpoint hr {
+    margin-top:1.5%;
+    width: 95%;
+    height: 3%;
+    border: solid 1.5px;
+    align-content:center;
+}
+
+/*Links:*/
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: space-around;
+    background-color: snow;
+}
+
+.links h5 {
+    font-family: "Moderustic", sans-serif;
+    text-align:center;
+    width: 100%;
+    
+}
+
+.links a {
+    height: 22px;
+    width: 40%;
+    color: black;
+    border: solid 2px;
+    text-decoration: none;
+    font-family: 'Roboto';
+    background-color: darkgray;
+    margin-bottom: 3%;
+    text-align: center;
+    text-justify: auto;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.links a:hover {
+    color:darkblue;
+    width:42%;
+    height:24px;
+}
+/*Footer styles:*/
+footer {
+    height: 100%;
+    background-color: Highlight;
+    border-radius: 10%;
+    justify-content: space-around;
+}
+
+footer p {
+    font-family: "Moderustic", sans-serif;
+    text-align: center;
+    font-size: 10px;
+}
+
+footer ul{
+    display:flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    border-radius: 5%;
+    text-decoration: none;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+footer ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-family: 'Roboto';
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+}
+
+footer ul li a:hover{
+    color:white;
+}
+
+/*Styles for Medical Device Engineering:*/
+
+#img_caption_meddevices {
+    margin: auto;
+    align-content: center;
+    width: 75%;
+    height: 75%;
+    transition-timing-function: ease-in-out;
+    transition-duration: 600ms;
+}
+
+#img_caption_meddevices img {
+    align-content:center;
+    margin-top: 3%;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#img_caption_meddevices h6 {
+    width: 100%;
+    margin-top: 0px;
+    font-family: 'Roboto';
+}
+
+#img_caption_meddevices:hover {
+    width: 80%;
+    height: 80%;
+}
+
+/*Genetic Engineering Styles:*/
+
+.two_col_txt_vid {
+    display: flex;
+    flex-direction: row;
+    background-color: gainsboro;
+    justify-content: space-around;
+    border: solid 3px;
+    border-color: darkcyan;
+}
+
+.two_col_txt_vid .title_txt{
+    width: 45%;
+    margin: 2%;
+}
+.two_col_txt_vid .title_txt h6{
+    font-family: 
+}
+
+.two_col_txt_vid .title_txt p{
+    font-family: 'roboto'
+}
+
+.two_col_txt_vid .vid{
+    align-content:center;
+    justify-content:center;
+}

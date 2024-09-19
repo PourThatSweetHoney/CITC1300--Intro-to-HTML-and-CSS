@@ -178,20 +178,27 @@ transition-duration: 600ms;
 /*two columns img, img:*/
 
 .two_col_img_img {
-display: flex;
-flex-wrap: nowrap;
-justify-content: space-around;
-margin: 2%;
-gap: 3%;
+    margin: 2%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+    align-content: center;
+    
 }
 
-.two_col_img_img img {
+.two_col_img_img .img_caption {
+    width: 40%;
     height: 400px;
-    width: 90%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: ease-in-out;
     transition-duration: 600ms;
-    object-fit:fill;
+}
+
+.two_col_img_img .img_caption img {
+    height: 80%;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    object-fit: fill;
 }
 
 .two_col_img_img h6 {
@@ -200,8 +207,8 @@ gap: 3%;
     font-family: 'Roboto';
 }
 
-.two_col_img_img img:hover {
-    width: 90%;
+.two_col_img_img .img_caption:hover {
+    width: 42%;
     height: 410px;
 }
 
@@ -370,4 +377,70 @@ footer ul li a:hover{
 .two_col_txt_vid .vid{
     align-content:center;
     justify-content:center;
+}
+
+/*Making the Website Reactive:*/
+
+@media(max-width: 780px) {
+
+
+    /*Styles for two column txt, img*/
+    .two_col_txt_img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 99%;
+        align-content: space-around;
+        justify-content: space-around;
+    }
+
+        .two_col_txt_img .img_caption {
+            width: 100%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+            .two_col_txt_img .img_caption:hover {
+                width: 104%;
+                margin-left: 2%;
+                margin-right: 2%;
+            }
+
+        .two_col_txt_img .title_txt {
+            width: 100%;
+        }
+
+            .two_col_txt_img .title_txt:hover {
+                width: 100%;
+            }
+
+    /*Styles for two column img, img*/
+
+    .two_col_img_img .img_caption {
+        width: 40%;
+        height: 200px;
+        transition: ease-in-out;
+        transition-duration: 600ms;
+    }
+
+        .two_col_img_img .img_caption:hover {
+            width: 43%;
+            height: 220px;
+        }
+
+    /*Styles for links:*/
+    .links a {
+        height: 44px;
+    }
+
+    /*styles for Genetic Engineering:*/
+
+    .two_col_txt_vid{
+        display:block
+    }
+
+    two_col_txt_vid .title_txt, two_col_txt_vid .title_txt p, two_col_txt_vid .title_txt h3 {
+        width: 100%
+    }
+
 }

@@ -374,10 +374,16 @@ footer ul li a:hover{
     font-family: 'roboto'
 }
 
-.two_col_txt_vid .vid{
-    align-content:center;
-    justify-content:center;
-}
+    .two_col_txt_vid .vid{
+        align-content: center;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .two_col_txt_vid .vid iframe {
+        width: 100%;
+        height: 400px;
+    }
 
 /*Making the Website Reactive:*/
 /*<--------------------------------->*/
@@ -516,6 +522,8 @@ footer ul li a:hover{
     .links a{
         height:100px;
     }
-
+    .two_col_txt_vid .vid iframe {
+        height: 250px;
+    }
 
 }

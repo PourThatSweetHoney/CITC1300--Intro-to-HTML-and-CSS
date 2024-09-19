@@ -380,8 +380,16 @@ footer ul li a:hover{
 }
 
 /*Making the Website Reactive:*/
-
+/*<--------------------------------->*/
+/*<--------------------------------->*/
+/*<--------------------------------->*/
+/*<--------------------------------->*/
+/*Styles for tablet:*/
 @media(max-width: 780px) {
+
+    .content{
+        width:90%;
+    }
 
 
     /*Styles for two column txt, img*/
@@ -436,11 +444,78 @@ footer ul li a:hover{
     /*styles for Genetic Engineering:*/
 
     .two_col_txt_vid{
-        display:block
+        flex-wrap:wrap;
     }
-
-    two_col_txt_vid .title_txt, two_col_txt_vid .title_txt p, two_col_txt_vid .title_txt h3 {
+    .two_col_txt_vid .title_txt, .two_col_txt_vid .title_txt p, .two_col_txt_vid .title_txt h3 {
         width: 100%
     }
+
+    .two_col_txt_vid .vid{
+        width:100%;
+    }
+
+    .two_col_txt_vid .vid iframe{
+        width:100%;
+    }
+
+   
+
+}
+
+/*<--------------------------------->*/
+/*<--------------------------------->*/
+/*<--------------------------------->*/
+/*<--------------------------------->*/
+/*Styles for phones:*/
+
+@media(max-width: 520px){
+    .content {
+        width:95%;
+    }
+
+    .hero {
+        width: 95%;
+    }
+    
+    .hero h1{
+        font-size: 30px;
+    }
+
+    .two_col_img_img {
+        flex-wrap: wrap;
+       
+    }
+
+    .two_col_img_img .img_caption {
+        width: 90%;
+        gap: 3%;
+        height: 340px;
+    }
+
+    .two_col_img_img .img_caption img {
+        height: 300px;
+    }
+
+    .two_col_img_img .img_caption:hover {
+        width: 92%;
+        height: 350px;
+    }
+
+    .navigation_bar ul{
+        flex-wrap:wrap;
+    }
+
+    .navigation_bar ul li {
+        height: 60px;
+        width: 40%;
+    }
+
+    footer ul{
+        flex-wrap:wrap;
+    }
+    .links a{
+        height:100px;
+    }
+
 
 }

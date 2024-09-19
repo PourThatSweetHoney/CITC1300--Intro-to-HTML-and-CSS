@@ -380,10 +380,11 @@ footer ul li a:hover{
         width: 50%;
     }
 
-    .two_col_txt_vid .vid iframe {
-        width: 100%;
-        height: 400px;
-    }
+        .two_col_txt_vid .vid iframe {
+            width: 100%;
+            height: 400px;
+
+        }
 
 /*Making the Website Reactive:*/
 /*<--------------------------------->*/
